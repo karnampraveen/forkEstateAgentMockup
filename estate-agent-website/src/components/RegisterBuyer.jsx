@@ -22,7 +22,7 @@ const RegisterBuyer = (props) => {
                 }
             ).then((response) => response.json())
             .then((dataa)=>         
-                document.getElementById("BuyerSuccess").innerHTML="Buyer " + FirstName + " " + SurName + " added successfully. ID is "  + dataa.id
+                document.getElementById("BuyerSuccess").innerHTML="New buyer " + FirstName + " " + SurName + " added successfully. ID is "  + dataa.id
         )
             .then(() => {
                 props.fetchBuyerData()
